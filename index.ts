@@ -1119,8 +1119,10 @@ const gitRepositories = new k8s.apiextensions.v1.CustomResourceDefinition(
                       type: 'array',
                     },
                     lastHandledReconcileAt: {
-                      description: 'LastHandledReconcileAt holds the value of the most recent reconcile request value, so a change of the annotation value can be detected.',
-                      'type': 'string'
+                      description: 'LastHandledReconcileAt holds the value of the most'
+                      + ' recent reconcile request value, so a change of the'
+                      + ' annotation value can be detected.',
+                      type: 'string',
                     },
                     'observedGeneration': {
                       'description': 'ObservedGeneration is the last observed generation.',
